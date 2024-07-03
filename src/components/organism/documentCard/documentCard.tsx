@@ -12,10 +12,7 @@ type DocumentCardProps = {
   header: string;
 };
 
-export default function DocumentCard({
-  description,
-  header,
-}: DocumentCardProps) {
+function DocumentCard({ description, header }: DocumentCardProps) {
   return (
     <Card>
       <CardHeader title={header} />
@@ -28,3 +25,5 @@ export default function DocumentCard({
     </Card>
   );
 }
+
+export default DocumentCard;
